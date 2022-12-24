@@ -28,9 +28,19 @@
         android:label="New_task"
         tools:layout="@layout/fragment_new_task" />
     <fragment
-        android:id="@+id/profileFragment"
+        android:id="@+id/navigation_profile"
         android:name="com.example.month4_lesson_1.ui.home.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/onBoardFragment"
+        android:name="com.example.month4_lesson_1.ui.onBoard.OnBoardFragment"
+        android:label="fragment_on_board"
+        tools:layout="@layout/fragment_on_board" />
+    <fragment
+        android:id="@+id/onBoardPageFragment"
+        android:name="com.example.month4_lesson_1.ui.onBoard.OnBoardPageFragment"
+        android:label="fragment_on_board_page"
+        tools:layout="@layout/fragment_on_board_page" />
 
 </navigation>

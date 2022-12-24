@@ -29,6 +29,8 @@ private lateinit var binding: ActivityMainBinding
             R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications,R.id.newTaskFragment
         )
         )
+
+        navController.navigate(R.id.onBoardFragment)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
@@ -36,6 +38,10 @@ private lateinit var binding: ActivityMainBinding
             if (destination.id== R.id.newTaskFragment){
                 navView.visibility = View.GONE
             }else navView.visibility = View.VISIBLE
+
+            if (destination.id == R.id.onBoardFragment){
+                supportActionBar?.hide()
+            }
 
         }
     }
